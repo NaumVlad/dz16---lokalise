@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Lokalise</title>
   <link rel="stylesheet" href="libs/normalize.css">
 
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,23 +14,28 @@
 <body>
   <header class="header container">
     <div class="header-menu">
-      <div class="header-menu__logo">
-        <img class="header-menu__image" src="assets/img/logo.svg" alt="site logo">
+      <div class="header-menu__logo header-logo">
+        <img class="header-logo__image" src="assets/img/logo.svg" alt="site logo">
       </div>
-      Lokalise
-      Product
-      Features
-      Pricing
-      Case studies
-      Resources
-      Log in
-      Try it free
-      <nav class="header-menu__navbar">
 
+      <nav class="header-menu__navbar header-navbar">
+        <ul class="header-navbar__list">
+          <li class="header-navbar__items"><a class="header-navbar__links" href="">Product</a></li>
+          <li class="header-navbar__items"><a class="header-navbar__links" href="">Features</a></li>
+          <li class="header-navbar__items"><a class="header-navbar__links" href="">Pricing</a></li>
+          <li class="header-navbar__items"><a class="header-navbar__links" href="">Case studies</a></li>
+          <li class="header-navbar__items"><a class="header-navbar__links" href="">Resources</a></li>
+        </ul>
       </nav>
 
-      <div class="header-menu-actions"></div>
+      <div class="header-menu__actions header-actions">
+        Log in
+        Try it free
+      </div>
+
     </div>
+
+    <div class="header-content"></div>
   </header>
 </body>
 
