@@ -1,24 +1,23 @@
 {
-  "name": "gulp",
+  "name": "lokalise",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "browser-sync": "^2.27.10",
-    "css-mqpacker": "^7.0.0",
-    "cssnano": "^5.1.13",
-    "gulp": "^4.0.2",
-    "gulp-csscomb": "^3.1.0",
-    "gulp-postcss": "^9.0.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "postcss": "^8.4.16",
-    "postcss-discard-comments": "^5.1.2",
-    "sass": "^1.54.5",
-    "sort-css-media-queries": "^2.0.4"
+  "description": "lokalise template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "editorconfig": "editorconfig-checker -exclude libs"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FomenkoAndrey/____localise-----20220816.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FomenkoAndrey/____localise-----20220816/issues"
+  },
+  "homepage": "https://github.com/FomenkoAndrey/____localise-----20220816#readme",
+  "devDependencies": {
+    "editorconfig-checker": "^4.0.2"
   }
 }
