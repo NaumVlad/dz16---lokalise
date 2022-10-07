@@ -1,2 +1,6 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header {
+  border-bottom: 1px solid rgba($color-primary, 0.5);
+}

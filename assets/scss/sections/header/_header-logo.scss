@@ -1,2 +1,9 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header-logo {
+  padding-left: $gap-sm;
+  /*   @include visually-hidden */
+}
+
+.header-logo__image {}

@@ -1,2 +1,10 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header-actions {
+  display: flex;
+  gap: $gap-sm;
+}
+
+.header-actions__btn {
+}
