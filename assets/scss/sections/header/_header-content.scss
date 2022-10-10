@@ -3,18 +3,16 @@
 
 .header-content {
   display: grid;
-  grid-template-areas: "cnt pic";
-  grid-template-columns: 580px 1fr;
-  /* row-gap: ; */
-  padding-top: 130px;
-  padding-bottom: 175px;
-}
-
-.header-content--container {
-  grid-area: cnt;
+  grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
+  grid-template-columns: 540px 1fr;
+  row-gap: $gap * 1.25;
+  padding: $gap * 1.5 0;
+  margin: auto;
 }
 
 .header-content__title {
+  grid-area: ttl;
+
   font-weight: 600;
   font-size: 4.06rem;
   line-height: 1.08;
@@ -22,22 +20,33 @@
 }
 
 .header-content__description {
+  grid-area: dcr;
+
   font-size: 1.56rem;
   line-height: 1.4;
-  padding-right: 71px;
+  padding-right: 10px;
+  padding: $gap * 1.25 0;
 }
 
 .header-content__actions {
+  grid-area: act;
+
   display: flex;
   gap: $gap-sm;
 }
 
-.header-content__btn {}
-
 .header-content__notes {
+  grid-area: nts;
+
   line-height: 1.67;
 }
 
 .header-content__picture {
   grid-area: pic;
+}
+
+.div {
+  width: 100vw;
+  height: 200px;
+  background-color: rebeccapurple;
 }

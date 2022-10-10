@@ -2,7 +2,7 @@
 @use "../../mixins" as *;
 
 .header-logo {
-  padding-left: $gap-sm;
+  padding-right: $gap-sm;
   /*   @include visually-hidden */
 }
 

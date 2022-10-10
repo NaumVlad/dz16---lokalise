@@ -7,8 +7,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: $gap;
-  padding-top: $gap;
-  padding-bottom: $gap;
+  padding-top: $gap * 1.25;
+  padding-bottom: $gap * 1.25;
 
   &::after {
     content: "";

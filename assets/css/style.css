@@ -200,6 +200,8 @@ html {
 body {
   position: relative;
 
+  overflow-x: hidden;
+
   color: #000000;
 
   font-size: 15px;
@@ -274,8 +276,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   gap: 20px;
 }
@@ -298,7 +300,7 @@ a {
 }
 
 .header-logo {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-navbar__list {
@@ -333,15 +335,12 @@ a {
 .header-content {
   display: grid;
 
-  padding-top: 130px;
-  padding-bottom: 175px;
+  margin: auto;
+  padding: 30px 0;
 
-  grid-template-areas: "cnt pic";
-  grid-template-columns: 580px 1fr;
-}
-
-.header-content--container {
-  grid-area: cnt;
+  grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
+  grid-template-columns: 540px 1fr;
+  row-gap: 25px;
 }
 
 .header-content__title {
@@ -350,13 +349,18 @@ a {
   font-size: 4.06rem;
   font-weight: 600;
   line-height: 1.08;
+
+  grid-area: ttl;
 }
 
 .header-content__description {
-  padding-right: 71px;
+  padding: 25px 0;
+  padding-right: 10px;
 
   font-size: 1.56rem;
   line-height: 1.4;
+
+  grid-area: dcr;
 }
 
 .header-content__actions {
@@ -365,12 +369,22 @@ a {
   display: flex;
 
   gap: 10px;
+  grid-area: act;
 }
 
 .header-content__notes {
   line-height: 1.67;
+
+  grid-area: nts;
 }
 
 .header-content__picture {
   grid-area: pic;
+}
+
+.div {
+  width: 100vw;
+  height: 200px;
+
+  background-color: rebeccapurple;
 }
