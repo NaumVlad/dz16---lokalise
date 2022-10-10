@@ -13,13 +13,14 @@ html {
   font-size: $font-size;
   font-family: $font-family;
   font-weight: 400;
-/*   line-height: 1.333; */
+  /*   line-height: 1.333; */
 }
 
 body {
   font-size: 15px;
   color: $color-primary;
   /* overflow-x: hidden; */
+  position: relative;
 }
 
 a {

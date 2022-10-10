@@ -1,2 +1,43 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header-content {
+  display: grid;
+  grid-template-areas: "cnt pic";
+  grid-template-columns: 580px 1fr;
+  /* row-gap: ; */
+  padding-top: 130px;
+  padding-bottom: 175px;
+}
+
+.header-content--container {
+  grid-area: cnt;
+}
+
+.header-content__title {
+  font-weight: 600;
+  font-size: 4.06rem;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.header-content__description {
+  font-size: 1.56rem;
+  line-height: 1.4;
+  padding-right: 71px;
+}
+
+.header-content__actions {
+  display: flex;
+  gap: $gap-sm;
+}
+
+.header-content__btn {}
+
+.header-content__notes {
+  line-height: 1.67;
+}
+
+.header-content__picture {
+  grid-area: pic;
+}

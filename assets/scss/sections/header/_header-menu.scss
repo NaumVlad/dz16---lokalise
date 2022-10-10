@@ -2,13 +2,24 @@
 @use "../../mixins" as *;
 
 .header-menu {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: $gap;
   padding-top: $gap;
   padding-bottom: $gap;
-  /* border-bottom: 1px solid rgba($color-primary, 0.5); */
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 100vw;
+    margin-left: -50vw;
+    background-color: rgba($color-primary, 0.5);
+  }
 }
 
 .header-menu__logo {}
