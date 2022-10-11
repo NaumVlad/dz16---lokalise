@@ -382,9 +382,12 @@ a {
   grid-area: pic;
 }
 
-.div {
-  width: 100vw;
-  height: 200px;
+.brands {
+  background-color: #ff9c7d;
+}
 
-  background-color: rebeccapurple;
+.brands__title {
+  font-size: 3.12rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
