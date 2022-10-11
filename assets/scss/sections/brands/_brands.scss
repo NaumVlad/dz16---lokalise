@@ -3,18 +3,20 @@
 
 .brands {
   background-color: $bg-color-coral;
+  padding: 100px 0;
 }
-
-.container--brands {}
 
 .brands__title {
   font-weight: 600;
   font-size: 3.12rem;
   line-height: 1.2;
+  margin: 0 0 $gap * 2.5;
+  text-align: center;
 }
 
-.brands__list {}
-
-.brands__picture {}
-
-.brands__image {}
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}

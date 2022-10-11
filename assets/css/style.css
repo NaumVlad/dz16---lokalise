@@ -383,11 +383,29 @@ a {
 }
 
 .brands {
+  padding: 100px 0;
+
   background-color: #ff9c7d;
 }
 
 .brands__title {
+  margin: 0 0 50px;
+
+  text-align: center;
+
   font-size: 3.12rem;
   font-weight: 600;
   line-height: 1.2;
+}
+
+.brands__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
