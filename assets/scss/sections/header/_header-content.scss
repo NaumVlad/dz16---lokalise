@@ -8,14 +8,38 @@
   row-gap: $gap * 1.25;
   padding: $gap * 1.5 0;
   margin: auto;
+  align-items: center;
+
+  @include xl-min {
+    grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
+    grid-template-columns: 540px 1fr;
+  }
+
+  @include xl-lg {
+    grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg {
+    grid-template-areas: "ttl" "dcr" "pic" "act" "nts";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
   &__title {
     grid-area: ttl;
 
     font-weight: 600;
-    font-size: 4.06rem;
     line-height: 1.08;
     margin: 0;
+
+    @include lg-min {
+      font-size: 4.06rem;
+    }
+
+    @include lg {
+      font-size: 3.125rem;
+    }
   }
 
   &__description {
@@ -23,8 +47,16 @@
 
     font-size: 1.56rem;
     line-height: 1.4;
-    padding-right: 10px;
     padding: $gap * 1.25 0;
+
+    @include lg-min {
+      font-size: 1.56rem;
+      padding-right: 10px;
+    }
+
+    @include lg {
+      font-size: 1.25rem;
+    }
   }
 
   &__actions {
@@ -32,6 +64,10 @@
 
     display: flex;
     gap: $gap-sm;
+
+    @include lg {
+      justify-content: center;
+    }
   }
 
   &__notes {
@@ -45,6 +81,17 @@
   }
 
   &__image {
-    width: 100%;
+
+    @include lg-min {
+      width: 100%;
+    }
+
+    @include lg-sm {
+      width: 70%;
+    }
+
+    @include sm {
+      width: 80%;
+    }
   }
 }
