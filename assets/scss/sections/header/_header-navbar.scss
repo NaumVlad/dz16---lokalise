@@ -2,10 +2,12 @@
 @use "../../mixins" as *;
 
 .header-navbar {
+  display: flex;
+  gap: $gap;
 
   &__list {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: $gap;
     @include unlist
   }

@@ -4,11 +4,15 @@
 .header-menu {
   position: relative;
   display: flex;
-  align-items: center;
-/*   flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: $gap;
   padding-top: $gap * 1.25;
   padding-bottom: $gap * 1.25;
+
+  @include lg {
+    justify-content: center;
+    align-items: center;
+  }
 
   &::after {
     content: "";
@@ -26,6 +30,9 @@
   &__navbar {}
 
   &__actions {
-    margin-left: auto;
+    @include lg-min {
+      margin-left: auto;
+    }
+
   }
 }
