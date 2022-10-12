@@ -9,6 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: $gap;
+
+    @include lg {
+      justify-content: center;
+    }
+
     @include unlist
   }
 
