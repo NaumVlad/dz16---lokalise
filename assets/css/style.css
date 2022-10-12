@@ -425,7 +425,7 @@ a {
 
     text-align: center;
 
-    grid-template-columns: repeat(6, 150px);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 @media (min-width: 1200px) {
@@ -478,10 +478,6 @@ a {
     width: 85%;
   }
   .brands__list {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-
     text-align: center;
 
     grid-template-columns: repeat(3, 1fr);
@@ -496,10 +492,6 @@ a {
     width: 80%;
   }
   .brands__list {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-
     text-align: center;
 
     grid-template-columns: repeat(2, 1fr);
