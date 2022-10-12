@@ -20,12 +20,12 @@
     margin-left: -50vw;
     background-color: rgba($color-primary, 0.5);
   }
-}
 
-.header-menu__logo {}
+  &__logo {}
 
-.header-menu__navbar {}
+  &__navbar {}
 
-.header-menu__actions {
-  margin-left: auto;
+  &__actions {
+    margin-left: auto;
+  }
 }

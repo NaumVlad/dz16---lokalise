@@ -3,7 +3,6 @@
 
 .header-logo {
   padding-right: $gap-sm;
-  /*   @include visually-hidden */
-}
 
-.header-logo__image {}
+  &__image {}
+}
