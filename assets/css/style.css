@@ -397,12 +397,16 @@ a {
 
   gap: 40px 20px;
 }
+
+
+
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
     height: 60px;
   }
 }
+
 @media (min-width: 992px) {
   .header-menu__actions {
     margin-left: auto;
@@ -428,18 +432,21 @@ a {
     grid-template-columns: repeat(6, 1fr);
   }
 }
+
 @media (min-width: 1200px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 540px 1fr;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (max-width: 991.8px) {
   .header-menu {
     -webkit-box-orient: vertical;
@@ -473,6 +480,7 @@ a {
     justify-content: center;
   }
 }
+
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__image {
     width: 85%;
@@ -483,6 +491,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 575.8px) {
   .btn-mg {
     width: 135px;
