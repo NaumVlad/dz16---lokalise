@@ -398,7 +398,61 @@ a {
   gap: 40px 20px;
 }
 
+.job {
+  padding: 100px 0;
+}
 
+.job__title {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+
+
+.job-content__titles {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  grid-area: ttl;
+}
+
+.job-content__descriptions {
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  grid-area: dcr;
+}
+
+.job-content__actions {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  grid-area: act;
+}
+
+.job-content__pictures {
+  grid-area: pic;
+}
+
+.job-content__images {
+  width: 100%;
+}
 
 @media (min-width: 576px) {
   .btn-mg {

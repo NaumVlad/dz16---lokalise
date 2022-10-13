@@ -1,0 +1,49 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.job-content {
+  /* display: grid;
+  grid-template-areas: "ttl pic" "dcr pic" "act pic";
+  grid-template-columns: 540px 1fr;
+  row-gap: $gap * 1.25;
+  padding: $gap * 1.5 0;
+  margin: auto;
+  align-items: center; */
+}
+
+.job-content__wrapper {}
+
+.job-content__titles {
+  grid-area: ttl;
+
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 1.2;
+}
+
+.job-content__descriptions {
+  grid-area: dcr;
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.job-content__descriptions__links {}
+
+.job-content__actions {
+  grid-area: act;
+
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.job-content__links {}
+
+.job-content__pictures {
+  grid-area: pic;
+}
+
+.job-content__images {
+  width: 100%;
+}
