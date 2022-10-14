@@ -2,9 +2,4 @@
 @use "../../mixins" as *;
 
 .job {
-  padding: 100px 0;
-}
-
-.job__title {
-  @include visually-hidden
 }
