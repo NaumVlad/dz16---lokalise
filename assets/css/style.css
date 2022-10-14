@@ -401,7 +401,7 @@ a {
 .job-content {
   display: grid;
 
-  padding: 100px 0;
+  padding: 100px 20px;
 
   row-gap: 250px;
 }
@@ -459,18 +459,11 @@ a {
 }
 
 .job-interaction {
-  display: grid;
-
-  margin: 0 auto;
   padding: 130px 0;
 
   text-align: center;
 
   background-color: #fff8e6;
-
-  gap: 76px 130px;
-  grid-template-areas: "ttl ttl ttl";
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .job-interaction__title {
@@ -479,6 +472,14 @@ a {
   line-height: 1.2;
 
   grid-area: ttl;
+}
+
+.job-interaction--container {
+  display: grid;
+
+  gap: 76px 130px;
+  grid-template-areas: "ttl ttl ttl";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .interaction-wrapper {

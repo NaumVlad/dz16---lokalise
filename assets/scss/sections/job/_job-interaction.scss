@@ -5,19 +5,20 @@
   background-color: #FFF8E6;
   padding: 130px 0;
   text-align: center;
-margin: 0 auto;
-  display: grid;
-  grid-template-areas: "ttl ttl ttl";
-  grid-template-columns: repeat(3, 1fr);
-  gap: $gap * 3.8 $gap * 6.5;
 }
 
 .job-interaction__title {
   grid-area: ttl;
-
   font-weight: 600;
   font-size: 3.12rem;
   line-height: 1.2;
+}
+
+.job-interaction--container {
+    display: grid;
+  grid-template-areas: "ttl ttl ttl";
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap * 3.8 $gap * 6.5;
 }
 
 .job-interaction__wrapper {}
