@@ -458,6 +458,69 @@ a {
   width: 100%;
 }
 
+.job-interaction {
+  display: grid;
+
+  margin: 0 auto;
+  padding: 130px 0;
+
+  text-align: center;
+
+  background-color: #fff8e6;
+
+  gap: 76px 130px;
+  grid-template-areas: "ttl ttl ttl";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.job-interaction__title {
+  font-size: 3.12rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  grid-area: ttl;
+}
+
+.interaction-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+  gap: 24px;
+}
+
+.interaction-wrapper__titles {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+
+  font-size: 1.56rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.interaction-wrapper__descriptions {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.interaction-wrapper__pictures {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
