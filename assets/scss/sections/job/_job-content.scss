@@ -5,6 +5,10 @@
   display: grid;
   row-gap: $gap * 12.5;
   padding: 100px 20px;
+
+  @include lg {
+    row-gap: $gap * 5;
+  }
 }
 
 .job-content__section {
@@ -14,9 +18,24 @@
   gap: $gap * 7;
   align-items: center;
 
+  @include lg {
+    grid-template-areas: "wrap"
+      "pic";
+    grid-template-columns: 1fr;
+    row-gap: $gap * 1.5;
+    text-align: center;
+    justify-items: center;
+  }
+
   &.job-content__section:nth-child(2n) {
     grid-template-areas: "pic wrap";
     grid-template-columns: 1fr 1fr;
+
+    @include lg {
+      grid-template-areas: "wrap"
+        "pic";
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -56,4 +75,8 @@
 
 .job-content__images {
   width: 100%;
+
+  @include lg {
+    width: 80%;
+  }
 }

@@ -601,6 +601,24 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .job-content {
+    row-gap: 100px;
+  }
+  .job-content__section {
+    text-align: center;
+
+    grid-template-areas: "wrap" "pic";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+  .job-content__section.job-content__section:nth-child(2n) {
+    grid-template-areas: "wrap" "pic";
+    grid-template-columns: 1fr;
+  }
+  .job-content__images {
+    width: 80%;
+  }
 }
 
 @media (max-width: 991.8px) and (min-width: 576px) {
