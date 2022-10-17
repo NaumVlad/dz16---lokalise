@@ -1,0 +1,30 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.job-productivity {
+
+  &--container {}
+
+  &__title {}
+
+  &__wrapper {}
+}
+
+
+.productivity-wrapper {
+
+  &__titles {}
+
+  &__descriptions {
+
+    &__links {}
+  }
+
+  &__actions {}
+
+  &__links {}
+
+  &__pictures {}
+
+  &__images {}
+}

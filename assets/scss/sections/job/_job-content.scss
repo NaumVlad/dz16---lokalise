@@ -9,74 +9,72 @@
   @include lg {
     row-gap: $gap * 5;
   }
-}
 
-.job-content__section {
-  display: grid;
-  grid-template-areas: "wrap pic";
-  grid-template-columns: 1fr 1fr;
-  gap: $gap * 7;
-  align-items: center;
-
-  @include lg {
-    grid-template-areas: "wrap"
-      "pic";
-    grid-template-columns: 1fr;
-    row-gap: $gap * 1.5;
-    text-align: center;
-    justify-items: center;
-  }
-
-  &.job-content__section:nth-child(2n) {
-    grid-template-areas: "pic wrap";
+  &__section {
+    display: grid;
+    grid-template-areas: "wrap pic";
     grid-template-columns: 1fr 1fr;
+    gap: $gap * 7;
+    align-items: center;
 
     @include lg {
       grid-template-areas: "wrap"
         "pic";
       grid-template-columns: 1fr;
+      row-gap: $gap * 1.5;
+      text-align: center;
+      justify-items: center;
+    }
+
+    &:nth-child(2n) {
+      grid-template-areas: "pic wrap";
+      grid-template-columns: 1fr 1fr;
+
+      @include lg {
+        grid-template-areas: "wrap"
+          "pic";
+        grid-template-columns: 1fr;
+      }
     }
   }
-}
 
-.job-content__wrapper {
-  grid-area: wrap;
+  &__wrapper {
+    grid-area: wrap;
 
-  max-width: 520px;
-}
+    max-width: 520px;
+  }
 
-.job-content__titles {
-  font-weight: 600;
-  font-size: 3.125rem;
-  line-height: 1.2;
-}
+  &__titles {
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 1.2;
+  }
 
-.job-content__descriptions {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  padding: 30px 0 30px 0;
-}
+  &__descriptions {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 30px 0 30px 0;
 
-.job-content__descriptions__links {
-  text-decoration: underline;
-}
+    &__links {
+      text-decoration: underline;
+    }
+  }
 
-.job-content__actions {
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
+  &__actions {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 
-.job-content__links {}
+  &__pictures {
+    grid-area: pic;
+  }
 
-.job-content__pictures {
-  grid-area: pic;
-}
+  &__images {
+    width: 100%;
 
-.job-content__images {
-  width: 100%;
-
-  @include lg {
-    width: 80%;
+    @include lg {
+      width: 80%;
+    }
   }
 }

@@ -26,14 +26,9 @@
     background-color: rgba($color-primary, 0.5);
   }
 
-  &__logo {}
-
-  &__navbar {}
-
   &__actions {
     @include lg-min {
       margin-left: auto;
     }
-
   }
 }
