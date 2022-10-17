@@ -583,11 +583,13 @@ a {
 
   background-color: #cae8f1;
 }
-
 .feedback--container {
   display: grid;
 
   grid-template-areas: "wrap pic";
+}
+.feedback__picture {
+  grid-area: pic;
 }
 
 .feedback-wrapper {
@@ -601,7 +603,6 @@ a {
 
   grid-area: wrap;
 }
-
 .feedback-wrapper__title {
   position: absolute;
 
@@ -620,22 +621,16 @@ a {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
 }
-
 .feedback-wrapper__descriptions {
   font-size: 1.875rem;
   line-height: 1.33;
 }
-
 .feedback-wrapper__notes {
   padding-top: 25px;
   padding-bottom: 6px;
 
   font-size: 0.937rem;
   line-height: 1.67;
-}
-
-.feedback-pictures {
-  grid-area: pic;
 }
 
 .apps {
@@ -678,15 +673,55 @@ a {
   font-weight: 600;
   line-height: 1.43;
 }
-.apps-wrapper__pictures {
+.apps-wrapper__picture {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+}
+
+.tools {
+  padding: 150px 0 150px 0;
+}
+.tools--container {
+  display: grid;
+
+  text-align: center;
+
+  gap: 30px;
+  grid-template-areas: "ttl" "dcr" "pic" "act";
+  justify-items: center;
+}
+.tools__title {
+  font-weight: 600;
+  line-height: 1.15;
+
+  grid-area: ttl;
+}
+.tools__descriptions {
+  line-height: 1.2;
+
+  grid-area: dcr;
+}
+.tools__actions {
+  font-weight: 600;
+  line-height: 3.75;
+
+  grid-area: act;
+}
+.tools__picture {
+  grid-area: pic;
 }
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
     height: 60px;
+  }
+  .tools__btn {
+    width: 190px;
+    height: 60px;
+  }
+  .tools .tools__image {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -732,6 +767,14 @@ a {
   }
   .apps-wrapper {
     border-right: 2px solid black;
+  }
+  .tools__title {
+    font-size: 4.06rem;
+  }
+  .tools__descriptions {
+    padding-right: 10px;
+
+    font-size: 1.56rem;
   }
 }
 @media (min-width: 1200px) {
@@ -815,6 +858,12 @@ a {
   .apps-wrapper {
     text-align: center;
   }
+  .tools__title {
+    font-size: 3.125rem;
+  }
+  .tools__descriptions {
+    font-size: 1.25rem;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__image {
@@ -881,7 +930,14 @@ a {
 
     gap: 40px;
   }
-  .apps-wrapper__images {
+  .apps-wrapper__image {
     width: 75%;
+  }
+  .tools__btn {
+    width: 170px;
+    height: 50px;
+  }
+  .tools .tools__image {
+    width: 90%;
   }
 }

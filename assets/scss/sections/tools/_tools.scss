@@ -1,2 +1,77 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.tools {
+  padding: 150px 0 150px 0;
+
+  &--container {
+    display: grid;
+    grid-template-areas: "ttl" "dcr" "pic" "act";
+    justify-items: center;
+    gap: $gap * 1.5;
+    text-align: center;
+  }
+
+  &__title {
+    grid-area: ttl;
+
+    font-weight: 600;
+    line-height: 1.15;
+
+    @include lg-min {
+      font-size: 4.06rem;
+    }
+
+    @include lg {
+      font-size: 3.125rem;
+    }
+  }
+
+  &__descriptions {
+    grid-area: dcr;
+
+    line-height: 1.2;
+
+    @include lg-min {
+      font-size: 1.56rem;
+      padding-right: 10px;
+    }
+
+    @include lg {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__actions {
+    grid-area: act;
+
+    font-weight: 600;
+    line-height: 3.75;
+  }
+
+  &__btn {
+    @include sm-min {
+      width: 190px;
+      height: 60px;
+    }
+
+    @include sm {
+      width: 170px;
+      height: 50px;
+    }
+  }
+
+  &__picture {
+    grid-area: pic;
+  }
+
+  .tools__image {
+    @include sm-min {
+      width: 100%;
+    }
+
+    @include sm {
+      width: 90%;
+    }
+  }
+}

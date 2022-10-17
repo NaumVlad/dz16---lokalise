@@ -70,11 +70,11 @@
     line-height: 1.43;
   }
 
-  &__pictures {
+  &__picture {
     order: 1;
   }
 
-  &__images {
+  &__image {
     @include sm {
       width: 75%;
     }
