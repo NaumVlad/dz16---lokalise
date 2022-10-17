@@ -386,7 +386,7 @@ a {
 
   text-align: center;
 
-  font-size: 3.12rem;
+  font-size: 3.125rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -510,6 +510,74 @@ a {
   -ms-flex-order: 1;
   order: 1;
 }
+
+.job-productivity {
+  padding: 150px 0;
+}
+.job-productivity--container {
+  display: grid;
+
+  gap: 80px 30px;
+}
+.job-productivity__title {
+  text-align: center;
+
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  grid-area: ttl;
+}
+.productivity-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  gap: 25px;
+}
+.productivity-wrapper__titles {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+
+  padding-top: 35px;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.productivity-wrapper__descriptions {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+
+  padding-top: 10px;
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.productivity-wrapper__actions {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+.productivity-wrapper__links {
+  text-decoration: underline;
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.productivity-wrapper__pictures {
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
@@ -541,6 +609,10 @@ a {
     grid-template-columns: repeat(6, 1fr);
   }
   .job-interaction--container {
+    grid-template-areas: "ttl ttl ttl";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .job-productivity--container {
     grid-template-areas: "ttl ttl ttl";
     grid-template-columns: repeat(3, 1fr);
   }
@@ -621,6 +693,10 @@ a {
     grid-template-areas: "ttl ttl";
     grid-template-columns: repeat(2, 1fr);
   }
+  .job-productivity--container {
+    grid-template-areas: "ttl ttl";
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 575.8px) {
   .btn-mg {
@@ -636,6 +712,12 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .job-interaction--container {
+    grid-template-areas: "ttl";
+    grid-template-columns: 1fr;
+  }
+  .job-productivity--container {
+    text-align: center;
+
     grid-template-areas: "ttl";
     grid-template-columns: 1fr;
   }
