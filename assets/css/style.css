@@ -578,12 +578,73 @@ a {
   -ms-flex-order: 1;
   order: 1;
 }
+.feedback {
+  padding: 50px 0 100px 0;
+
+  background-color: #cae8f1;
+}
+
+.feedback--container {
+  display: grid;
+
+  grid-template-areas: "wrap pic";
+}
+
+.feedback-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  grid-area: wrap;
+}
+
+.feedback-wrapper__title {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.feedback-wrapper__descriptions {
+  font-size: 1.875rem;
+  line-height: 1.33;
+}
+
+.feedback-wrapper__notes {
+  padding-top: 25px;
+  padding-bottom: 6px;
+
+  font-size: 0.937rem;
+  line-height: 1.67;
+}
+
+.feedback-pictures {
+  grid-area: pic;
+}
+
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
     height: 60px;
   }
 }
+
 @media (min-width: 992px) {
   .header-menu__actions {
     margin-left: auto;
@@ -616,19 +677,25 @@ a {
     grid-template-areas: "ttl ttl ttl";
     grid-template-columns: repeat(3, 1fr);
   }
+  .feedback--container {
+    gap: 72px;
+  }
 }
+
 @media (min-width: 1200px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 540px 1fr;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (max-width: 991.8px) {
   .header-menu {
     -webkit-box-orient: vertical;
@@ -679,7 +746,11 @@ a {
   .job-content__images {
     width: 80%;
   }
+  .feedback--container {
+    gap: 60px;
+  }
 }
+
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__image {
     width: 85%;
@@ -698,6 +769,15 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 767.8px) {
+  .feedback--container {
+    text-align: center;
+
+    grid-template-areas: "pic" "wrap";
+  }
+}
+
 @media (max-width: 575.8px) {
   .btn-mg {
     width: 135px;
