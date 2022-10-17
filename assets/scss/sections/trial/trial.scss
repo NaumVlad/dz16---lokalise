@@ -1,2 +1,46 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.trial {
+  padding: 130px 0 130px 0;
+  background-color: $bg-color-coral;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    gap: $gap * 1.5;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.15;
+
+    @include lg-min {
+      font-size: 4.06rem;
+    }
+
+    @include lg {
+      font-size: 3.125rem;
+    }
+  }
+
+  &__descriptions {
+    padding-bottom: 20px;
+
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  &__actions {
+    font-weight: 600;
+    line-height: 3.75;
+  }
+
+  &__btn {
+    color: white;
+    background-color: $color-primary;
+    border: none;
+  }
+}
