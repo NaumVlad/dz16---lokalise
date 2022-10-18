@@ -1,0 +1,13 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.about-menu {
+
+  &__content {}
+
+  &__title {}
+
+  &__list {}
+
+  &__items {}
+}
