@@ -4,17 +4,23 @@
 .about-motivation {
 
   &__title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.25;
   }
 
   &__descriptions {
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 
-&__notes {
-}
+  &__notes {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 
-&__pictures {
-}
+  &__pictures {}
 
-&__images {
-}
+  &__images {}
 }

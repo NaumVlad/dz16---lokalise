@@ -5,9 +5,16 @@
 
   &__content {}
 
-  &__title {}
+  &__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
 
   &__list {}
 
-  &__items {}
+  &__items {
+    font-size: 0.93rem;
+    line-height: 1;
+  }
 }
