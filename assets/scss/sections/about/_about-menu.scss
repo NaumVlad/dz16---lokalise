@@ -2,16 +2,27 @@
 @use "../../mixins" as *;
 
 .about-menu {
+ /*  display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  
+  gap: $gap;
 
   &__content {}
 
   &__title {
+    padding-bottom: 20px;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.25;
   }
 
-  &__list {}
+  &__list {
+    /* display: flex;
+    flex-direction: column;
+    row-gap: 20px; */
+    @include unlist
+  }
 
   &__items {
     font-size: 0.93rem;

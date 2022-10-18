@@ -2,25 +2,44 @@
 @use "../../mixins" as *;
 
 .about-motivation {
+  display: grid;
+  grid-template-areas: "ttl" "pic" "brd" "disc" "nts";
+  grid-template-columns: 300px;
+  gap: $gap-sm;
 
   &__title {
+    grid-area: ttl;
+
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 1.25;
   }
 
   &__descriptions {
+    grid-area: disc;
+
+    padding-bottom: 5px;
     font-size: 1.25rem;
     line-height: 1.5;
   }
 
   &__notes {
+    grid-area: nts;
+
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5;
   }
 
-  &__pictures {}
+  &__picture {
+    grid-area: pic;
 
-  &__images {}
+    padding: 20px 0 20px 0;
+  }
+
+  &__brands {
+    grid-area: brd;
+  }
+
+  &__image {}
 }

@@ -2,6 +2,12 @@
 @use "../../mixins" as *;
 
 .about {
+  padding: 95px 0 95px 0;
 
-  &--container {}
+  &--container {
+    display: flex;
+    align-items: baseline;
+    gap: $gap * 7;
+
+  }
 }

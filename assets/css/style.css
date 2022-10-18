@@ -753,24 +753,74 @@ a {
   background-color: #000000;
 }
 
+.about {
+  padding: 95px 0 95px 0;
+}
+.about--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  -ms-flex-align: baseline;
+
+  gap: 140px;
+}
+
+.about-motivation {
+  display: grid;
+
+  gap: 10px;
+  grid-template-areas: "ttl" "pic" "brd" "disc" "nts";
+  grid-template-columns: 300px;
+}
 .about-motivation__title {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.25;
+
+  grid-area: ttl;
 }
 .about-motivation__descriptions {
+  padding-bottom: 5px;
+
   font-size: 1.25rem;
   line-height: 1.5;
+
+  grid-area: disc;
 }
 .about-motivation__notes {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5;
+
+  grid-area: nts;
+}
+.about-motivation__picture {
+  padding: 20px 0 20px 0;
+
+  grid-area: pic;
+}
+.about-motivation__brands {
+  grid-area: brd;
+}
+.about-menu {
+  display: grid;
+
+  gap: 20px;
 }
 .about-menu__title {
+  padding-bottom: 20px;
+
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.25;
+}
+.about-menu__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 .about-menu__items {
   font-size: 0.93rem;
@@ -781,12 +831,10 @@ a {
   font-size: 0.75rem;
   line-height: 1.25;
 }
-
 .politic__text {
   font-size: 0.75rem;
   line-height: 1.25;
 }
-
 @media (min-width: 576px) {
   .btn-mg {
     width: 160px;
@@ -800,7 +848,6 @@ a {
     width: 100%;
   }
 }
-
 @media (min-width: 992px) {
   .header-menu__actions {
     margin-left: auto;
@@ -855,21 +902,18 @@ a {
     font-size: 4.06rem;
   }
 }
-
 @media (min-width: 1200px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 540px 1fr;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-content {
     grid-template-areas: "ttl pic" "dcr pic" "act pic" "nts pic";
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 991.8px) {
   .header-menu {
     -webkit-box-orient: vertical;
@@ -949,7 +993,6 @@ a {
     font-size: 3.125rem;
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__image {
     width: 85%;
@@ -968,7 +1011,6 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 767.8px) {
   .feedback--container {
     text-align: center;
@@ -976,7 +1018,6 @@ a {
     grid-template-areas: "pic" "wrap";
   }
 }
-
 @media (max-width: 575.8px) {
   .btn-mg {
     width: 135px;

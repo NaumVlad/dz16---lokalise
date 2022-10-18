@@ -1,26 +1,28 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.politic {}
+.politic {
 
-.politic--container {}
+  &--container {}
 
-.politic__wrapper {}
+  &__wrapper {
 
-.politic__wrapper--lokalise {}
+    &--lokalise {}
 
-.politic__descriptions {
-  font-size: 0.75rem;
-  line-height: 1.25;
-}
+    &--reserved {}
+  }
 
-.politic__picture {}
+  &__descriptions {
+    font-size: 0.75rem;
+    line-height: 1.25;
+  }
 
-.politic__image {}
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.25;
+  }
 
-.politic__wrapper--reserved {}
+  &__picture {}
 
-.politic__text {
-  font-size: 0.75rem;
-  line-height: 1.25;
+  &__image {}
 }
