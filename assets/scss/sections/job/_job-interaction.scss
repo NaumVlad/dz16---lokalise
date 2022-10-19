@@ -6,31 +6,31 @@
   padding: 130px 0;
   text-align: center;
 
-  &--container {
-    display: grid;
-    gap: $gap * 3.8 $gap * 6.5;
-
-    @include lg-min {
-      grid-template-areas: "ttl ttl ttl";
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include lg-sm {
-      grid-template-areas: "ttl ttl";
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include sm {
-      grid-template-areas: "ttl";
-      grid-template-columns: 1fr;
-    }
-  }
-
   &__title {
     grid-area: ttl;
     font-weight: 600;
     font-size: 3.12rem;
     line-height: 1.2;
+  }
+}
+
+.interaction--container {
+  display: grid;
+  gap: $gap * 3.8 $gap * 6.5;
+
+  @include lg-min {
+    grid-template-areas: "ttl ttl ttl";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg-sm {
+    grid-template-areas: "ttl ttl";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-areas: "ttl";
+    grid-template-columns: 1fr;
   }
 }
 

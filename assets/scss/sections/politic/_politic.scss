@@ -11,15 +11,12 @@
     padding-top: 50px;
     border-top: 1px solid black;
   }
+}
 
-  &__wrapper {
-
-    &--lokalise {
-      display: flex;
-      align-items: center;
-      gap: $gap-sm * 1.5;
-    }
-  }
+.politic-lokalise {
+  display: flex;
+  align-items: center;
+  gap: $gap-sm * 1.5;
 
   &__descriptions {
     order: 2;
@@ -28,12 +25,14 @@
     line-height: 1.25;
   }
 
-  &__text {
-    font-size: 0.75rem;
-    line-height: 1.25;
-  }
-
   &__picture {
     order: 1;
+  }
+}
+
+.politic-reserved {
+  &__descriptions {
+    font-size: 0.75rem;
+    line-height: 1.25;
   }
 }

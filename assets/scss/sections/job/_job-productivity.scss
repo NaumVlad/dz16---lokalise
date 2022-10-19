@@ -4,27 +4,6 @@
 .job-productivity {
   padding: 150px 0;
 
-  &--container {
-    display: grid;
-    gap: $gap * 4 $gap * 1.5;
-
-    @include lg-min {
-      grid-template-areas: "ttl ttl ttl";
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include lg-sm {
-      grid-template-areas: "ttl ttl";
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include sm {
-      grid-template-areas: "ttl";
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  }
-
   &__title {
     grid-area: ttl;
 
@@ -33,10 +12,28 @@
     font-size: 3.125rem;
     line-height: 1.2;
   }
-
-  &__wrapper {}
 }
 
+.productivity--container {
+  display: grid;
+  gap: $gap * 4 $gap * 1.5;
+
+  @include lg-min {
+    grid-template-areas: "ttl ttl ttl";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg-sm {
+    grid-template-areas: "ttl ttl";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include sm {
+    grid-template-areas: "ttl";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 
 .productivity-wrapper {
   display: flex;
@@ -56,8 +53,6 @@
     padding-top: 10px;
     font-size: 1.25rem;
     line-height: 1.5;
-
-    &__links {}
   }
 
   &__actions {
@@ -68,13 +63,10 @@
     font-size: 1.25rem;
     line-height: 1.5;
     text-decoration: underline;
-
   }
 
   &__pictures {
     order: 1;
     flex-basis: 200px;
   }
-
-  &__images {}
 }
