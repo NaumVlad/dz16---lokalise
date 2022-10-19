@@ -2,17 +2,28 @@
 @use "../../mixins" as *;
 
 .politic {
+  padding-bottom: 50px;
 
-  &--container {}
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap * 2;
+    padding-top: 50px;
+    border-top: 1px solid black;
+  }
 
   &__wrapper {
 
-    &--lokalise {}
-
-    &--reserved {}
+    &--lokalise {
+      display: flex;
+      align-items: center;
+      gap: $gap-sm * 1.5;
+    }
   }
 
   &__descriptions {
+    order: 2;
+
     font-size: 0.75rem;
     line-height: 1.25;
   }
@@ -22,7 +33,7 @@
     line-height: 1.25;
   }
 
-  &__picture {}
-
-  &__image {}
+  &__picture {
+    order: 1;
+  }
 }

@@ -2,13 +2,20 @@
 @use "../../mixins" as *;
 
 .about-menu {
- /*  display: flex;
-  flex-wrap: wrap; */
   display: grid;
-  
-  gap: $gap;
+  gap: $gap * 1.7;
 
-  &__content {}
+  @include lg-min {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include lg-sm {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
+  }
 
   &__title {
     padding-bottom: 20px;
@@ -18,9 +25,9 @@
   }
 
   &__list {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    row-gap: 20px; */
+    row-gap: $gap-sm * 1.5;
     @include unlist
   }
 

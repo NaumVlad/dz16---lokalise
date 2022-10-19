@@ -763,8 +763,6 @@ a {
   -webkit-box-align: baseline;
   align-items: baseline;
   -ms-flex-align: baseline;
-
-  gap: 140px;
 }
 
 .about-motivation {
@@ -804,10 +802,11 @@ a {
 .about-motivation__brands {
   grid-area: brd;
 }
+
 .about-menu {
   display: grid;
 
-  gap: 20px;
+  gap: 34px;
 }
 .about-menu__title {
   padding-bottom: 20px;
@@ -817,23 +816,69 @@ a {
   line-height: 1.25;
 }
 .about-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  row-gap: 15px;
 }
 .about-menu__items {
   font-size: 0.93rem;
   line-height: 1;
 }
 
+.politic {
+  padding-bottom: 50px;
+}
+.politic--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding-top: 50px;
+
+  border-top: 1px solid black;
+
+  gap: 40px;
+}
+.politic__wrapper--lokalise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 15px;
+}
 .politic__descriptions {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+
   font-size: 0.75rem;
   line-height: 1.25;
 }
 .politic__text {
   font-size: 0.75rem;
   line-height: 1.25;
+}
+.politic__picture {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 @media (min-width: 576px) {
   .btn-mg {
@@ -900,6 +945,12 @@ a {
   }
   .trial__title {
     font-size: 4.06rem;
+  }
+  .about--container {
+    gap: 140px;
+  }
+  .about-menu {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1200px) {
@@ -992,6 +1043,9 @@ a {
   .trial__title {
     font-size: 3.125rem;
   }
+  .about--container {
+    gap: 100px;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__image {
@@ -1010,12 +1064,24 @@ a {
     grid-template-areas: "ttl ttl";
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-menu {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 767.8px) {
   .feedback--container {
     text-align: center;
 
     grid-template-areas: "pic" "wrap";
+  }
+  .about--container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    text-align: center;
   }
 }
 @media (max-width: 575.8px) {
@@ -1067,5 +1133,8 @@ a {
   }
   .tools .tools__image {
     width: 90%;
+  }
+  .about-menu {
+    grid-template-columns: 1fr;
   }
 }
