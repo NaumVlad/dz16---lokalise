@@ -7,19 +7,18 @@
 
   &--container {
     display: grid;
-    grid-template-areas: "wrap pic";
 
+    grid-template-areas: "wrap pic";
     @include lg-min {
       gap: $gap * 3.6;
     }
-
     @include lg {
       gap: $gap * 3;
     }
-
     @include md {
-      grid-template-areas: "pic" "wrap";
       text-align: center;
+
+      grid-template-areas: "pic" "wrap";
     }
   }
 
@@ -31,10 +30,11 @@
 .feedback-wrapper {
   display: flex;
   flex-direction: column;
+
   grid-area: wrap;
 
   &__title {
-    @include visually-hidden
+    @include visually-hidden;
   }
 
   &__descriptions {
@@ -43,9 +43,10 @@
   }
 
   &__notes {
-    font-size: 0.937rem;
-    line-height: 1.67;
     padding-top: 25px;
     padding-bottom: 6px;
+
+    font-size: 0.937rem;
+    line-height: 1.67;
   }
 }

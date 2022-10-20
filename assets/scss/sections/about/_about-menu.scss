@@ -3,32 +3,32 @@
 
 .about-menu {
   display: grid;
-  gap: $gap * 1.7;
 
+  gap: $gap * 1.7;
   @include lg-min {
     grid-template-columns: repeat(4, 1fr);
   }
-
   @include lg-sm {
     grid-template-columns: 1fr 1fr;
   }
-
   @include sm {
     grid-template-columns: 1fr;
   }
 
   &__title {
     padding-bottom: 20px;
-    font-weight: 600;
+
     font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.25;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
+
+    @include unlist;
     row-gap: $gap-sm * 1.5;
-    @include unlist
   }
 
   &__items {

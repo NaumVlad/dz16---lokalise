@@ -2,36 +2,41 @@
 @use "../../mixins" as *;
 
 .brands {
-  background-color: $bg-color-coral;
   padding: 100px 0;
 
+  background-color: $bg-color-coral;
+
   &__title {
-    font-weight: 600;
-    font-size: 3.125rem;
-    line-height: 1.2;
     margin: 0 0 $gap * 2.5;
+
     text-align: center;
+
+    font-size: 3.125rem;
+    font-weight: 600;
+    line-height: 1.2;
   }
 
   &__list {
     display: grid;
     align-items: center;
-    gap: ($gap * 2) $gap;
 
+    gap: ($gap * 2) $gap;
     @include lg-min {
       justify-content: space-between;
+
+      text-align: center;
+
       grid-template-columns: repeat(6, 1fr);
-      text-align: center;
     }
-
     @include lg-sm {
-      grid-template-columns: repeat(3, 1fr);
       text-align: center;
-    }
 
+      grid-template-columns: repeat(3, 1fr);
+    }
     @include sm {
-      grid-template-columns: repeat(2, 1fr);
       text-align: center;
+
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

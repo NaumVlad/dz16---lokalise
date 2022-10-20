@@ -3,57 +3,59 @@
 
 .job-content {
   display: grid;
-  row-gap: $gap * 12.5;
+
   padding: 100px 20px;
 
   @include lg {
     row-gap: $gap * 5;
   }
+  row-gap: $gap * 12.5;
 
   &__section {
     display: grid;
-    grid-template-areas: "wrap pic";
-    grid-template-columns: 1fr 1fr;
-    gap: $gap * 7;
     align-items: center;
 
+    gap: $gap * 7;
+    grid-template-areas: "wrap pic";
+    grid-template-columns: 1fr 1fr;
     @include lg {
-      grid-template-areas: "wrap"
-        "pic";
-      grid-template-columns: 1fr;
-      row-gap: $gap * 1.5;
       text-align: center;
+
+      grid-template-areas: "wrap"
+      "pic";
+      grid-template-columns: 1fr;
       justify-items: center;
+      row-gap: $gap * 1.5;
     }
 
     &:nth-child(2n) {
       grid-template-areas: "pic wrap";
       grid-template-columns: 1fr 1fr;
-
       @include lg {
         grid-template-areas: "wrap"
-          "pic";
+        "pic";
         grid-template-columns: 1fr;
       }
     }
   }
 
   &__wrapper {
-    grid-area: wrap;
-
     max-width: 520px;
+
+    grid-area: wrap;
   }
 
   &__titles {
-    font-weight: 600;
     font-size: 3.125rem;
+    font-weight: 600;
     line-height: 1.2;
   }
 
   &__descriptions {
+    padding: 30px 0 30px 0;
+
     font-size: 1.25rem;
     line-height: 1.5;
-    padding: 30px 0 30px 0;
 
     &__links {
       text-decoration: underline;
@@ -61,8 +63,8 @@
   }
 
   &__actions {
-    font-weight: 600;
     font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.5;
   }
 

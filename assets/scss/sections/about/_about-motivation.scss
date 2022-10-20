@@ -3,38 +3,40 @@
 
 .about-motivation {
   display: grid;
+
+  gap: $gap-sm;
   grid-template-areas: "ttl" "pic" "brd" "disc" "nts";
   grid-template-columns: 300px;
-  gap: $gap-sm;
 
   &__title {
-    grid-area: ttl;
-
-    font-weight: 600;
     font-size: 2.5rem;
+    font-weight: 600;
     line-height: 1.25;
+
+    grid-area: ttl;
   }
 
   &__descriptions {
-    grid-area: disc;
-
     padding-bottom: 5px;
+
     font-size: 1.25rem;
     line-height: 1.5;
+
+    grid-area: disc;
   }
 
   &__notes {
-    grid-area: nts;
-
-    font-weight: 600;
     font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.5;
+
+    grid-area: nts;
   }
 
   &__picture {
-    grid-area: pic;
-
     padding: 20px 0 20px 0;
+
+    grid-area: pic;
   }
 
   &__brands {

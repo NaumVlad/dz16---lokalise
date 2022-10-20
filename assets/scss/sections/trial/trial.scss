@@ -3,14 +3,17 @@
 
 .trial {
   padding: 130px 0 130px 0;
+
   background-color: $bg-color-coral;
 
   &--container {
     display: flex;
-    flex-direction: column;
-    gap: $gap * 1.5;
     align-items: center;
+    flex-direction: column;
+
     text-align: center;
+
+    gap: $gap * 1.5;
   }
 
   &__title {
@@ -20,7 +23,6 @@
     @include lg-min {
       font-size: 4.06rem;
     }
-
     @include lg {
       font-size: 3.125rem;
     }
@@ -40,7 +42,7 @@
 
   &__btn {
     color: white;
-    background-color: $color-primary;
     border: none;
+    background-color: $color-primary;
   }
 }

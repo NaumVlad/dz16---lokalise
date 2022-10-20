@@ -11,15 +11,14 @@
     @include lg-min {
       gap: $gap * 7;
     }
-
     @include lg {
       gap: $gap * 5;
     }
-
     @include md {
-      justify-content: center;
-      text-align: center;
       flex-wrap: wrap;
+      justify-content: center;
+
+      text-align: center;
     }
   }
 }

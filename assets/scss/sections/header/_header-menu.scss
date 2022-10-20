@@ -3,26 +3,31 @@
 
 .header-menu {
   position: relative;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: $gap;
+
   padding-top: $gap * 1.25;
   padding-bottom: $gap * 1.25;
 
+  gap: $gap;
   @include lg {
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   &::after {
-    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    height: 1px;
+
     width: 100vw;
+    height: 1px;
     margin-left: -50vw;
+
+    content: "";
+
     background-color: rgba($color-primary, 0.5);
   }
 

@@ -2,8 +2,9 @@
 @use "../../mixins" as *;
 
 .apps {
-  background-color: $bg-color-bisque;
   padding: 80px 0 80px 0;
+
+  background-color: $bg-color-bisque;
 
   &--container {
     display: grid;
@@ -12,61 +13,57 @@
     @include lg-min {
       grid-template-areas: "wrap pic";
     }
-
     @include lg {
-      grid-template-areas: "wrap" "pic";
       gap: 25px;
+      grid-template-areas: "wrap" "pic";
     }
   }
 
   &__pictures {
-    grid-area: pic;
-
     display: flex;
-    gap: 70px;
 
+    gap: 70px;
+    grid-area: pic;
     @include lg-min {
       padding-left: 70px;
     }
-
     @include lg {
       justify-content: center;
-      border-top: 2px solid black;
-      padding-top: 40px;
-    }
 
+      padding-top: 40px;
+
+      border-top: 2px solid black;
+    }
     @include sm {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
 }
 
 .apps-wrapper {
-  grid-area: wrap;
-
   display: flex;
   align-items: center;
+
   gap: $gap * 3.4;
-
-
+  grid-area: wrap;
   @include lg-min {
     border-right: 2px solid black;
   }
-
   @include lg {
     text-align: center;
   }
-
   @include sm {
     flex-direction: column-reverse;
+
     gap: $gap * 2;
   }
 
   &__title {
     order: 2;
-    font-weight: 600;
+
     font-size: 2.18rem;
+    font-weight: 600;
     line-height: 1.43;
   }
 
