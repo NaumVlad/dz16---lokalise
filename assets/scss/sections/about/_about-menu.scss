@@ -5,12 +5,15 @@
   display: grid;
 
   gap: $gap * 1.7;
+
   @include lg-min {
     grid-template-columns: repeat(4, 1fr);
   }
+
   @include lg-sm {
     grid-template-columns: 1fr 1fr;
   }
+
   @include sm {
     grid-template-columns: 1fr;
   }
