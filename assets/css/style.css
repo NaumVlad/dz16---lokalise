@@ -470,8 +470,7 @@ a {
 
   grid-area: ttl;
 }
-
-.job-wrapper {
+.job-interaction__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +484,7 @@ a {
 
   gap: 24px;
 }
-.job-wrapper__titles {
+.job-interaction__text {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -494,7 +493,7 @@ a {
   font-weight: 600;
   line-height: 1.3;
 }
-.job-wrapper__descriptions {
+.job-interaction__descriptions {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
@@ -502,10 +501,10 @@ a {
   font-size: 1.12rem;
   line-height: 1.4;
 }
-.job-wrapper__descriptions__links {
+.job-interaction__descriptions__links {
   text-decoration: underline;
 }
-.job-wrapper__pictures {
+.job-interaction__pictures {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -513,6 +512,11 @@ a {
 
 .job-productivity {
   padding: 150px 0;
+}
+.job-productivity--container {
+  display: grid;
+
+  gap: 80px 30px;
 }
 .job-productivity__title {
   text-align: center;
@@ -523,14 +527,7 @@ a {
 
   grid-area: ttl;
 }
-
-.productivity--container {
-  display: grid;
-
-  gap: 80px 30px;
-}
-
-.productivity-wrapper {
+.job-productivity__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,7 +538,7 @@ a {
 
   gap: 25px;
 }
-.productivity-wrapper__titles {
+.job-productivity__text {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -552,7 +549,7 @@ a {
   font-weight: 600;
   line-height: 1.33;
 }
-.productivity-wrapper__descriptions {
+.job-productivity__descriptions {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
@@ -562,18 +559,18 @@ a {
   font-size: 1.25rem;
   line-height: 1.5;
 }
-.productivity-wrapper__actions {
+.job-productivity__actions {
   -webkit-box-ordinal-group: 5;
   -ms-flex-order: 4;
   order: 4;
 }
-.productivity-wrapper__links {
+.job-productivity__links {
   text-decoration: underline;
 
   font-size: 1.25rem;
   line-height: 1.5;
 }
-.productivity-wrapper__pictures {
+.job-productivity__pictures {
   -ms-flex-preferred-size: 200px;
   flex-basis: 200px;
   -webkit-box-ordinal-group: 2;
@@ -928,7 +925,7 @@ a {
     grid-template-areas: "ttl ttl ttl";
     grid-template-columns: repeat(3, 1fr);
   }
-  .productivity--container {
+  .job-productivity--container {
     grid-template-areas: "ttl ttl ttl";
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1071,7 +1068,7 @@ a {
     grid-template-areas: "ttl ttl";
     grid-template-columns: repeat(2, 1fr);
   }
-  .productivity--container {
+  .job-productivity--container {
     grid-template-areas: "ttl ttl";
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1114,7 +1111,7 @@ a {
     grid-template-areas: "ttl";
     grid-template-columns: 1fr;
   }
-  .productivity--container {
+  .job-productivity--container {
     text-align: center;
 
     grid-template-areas: "ttl";

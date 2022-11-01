@@ -9,12 +9,15 @@
     display: grid;
 
     grid-template-areas: "wrap pic";
+
     @include lg-min {
       gap: $gap * 3.6;
     }
+
     @include lg {
       gap: $gap * 3;
     }
+
     @include md {
       text-align: center;
 
