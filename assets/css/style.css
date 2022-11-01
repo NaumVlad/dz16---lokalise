@@ -167,7 +167,6 @@ textarea {
 
 [type=search] {
   outline-offset: -2px;
-
   -webkit-appearance: textfield;
 }
 
@@ -177,7 +176,6 @@ textarea {
 
 ::-webkit-file-upload-button {
   font: inherit;
-
   -webkit-appearance: button;
 }
 
