@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FomenkoAndrey/____localise-----20220816.git"
+    "url": "git+https://github.com/NaumVlad/dz16---lokalise.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FomenkoAndrey/____localise-----20220816/issues"
+    "url": "https://github.com/NaumVlad/dz16---lokalise/issues"
   },
-  "homepage": "https://github.com/FomenkoAndrey/____localise-----20220816#readme",
+  "homepage": "https://github.com/NaumVlad/dz16---lokalise#readme",
   "devDependencies": {
     "editorconfig-checker": "^4.0.2"
   }
